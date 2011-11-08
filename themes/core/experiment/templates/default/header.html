@@ -1,0 +1,20 @@
+<!-- Default Content -->
+<div class="row alpha omega">
+  <div class="ten columns alpha">
+    <a href="/">        
+        
+      </a>
+  </div>
+  <div class="six columns omega right" style="text-align: right">          
+      <!-- Theme / Module driven content -->      
+      <%- userLogin %>    
+  </div>
+  <br class="clear">
+</div>
+<div class="row alpha omega">
+  <% if(user.isAdmin) { %>
+      <div id="adminToolbar">
+        <%- getMenu('adminToolbar') %>
+      </div>
+    <% } %>
+</div>

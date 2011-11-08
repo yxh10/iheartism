@@ -1,0 +1,43 @@
+{
+  "name": "Experiment",
+  "type": "full",
+  "description": "Experiment for iheartism",
+  "version": "0.1",
+  "author": "",
+  "layouts": {
+    "default": {
+      "layout": {
+        "template": "default.html",
+        "sections": {
+          "styles": {"template": "styles.html","cache":true,"varyParams":false},
+          "scripts": {"template": "scripts.html"},
+          "admin": {"template": "adminMenu.html"},
+          "primary": {"template": "primaryMenu.html"},
+          "header": {"template": "header.html","cache":true,"varyParams":false},
+          "messages": {"template": "messages.html"},
+          "body": {"template": "body.html"},
+          "right": {"template": "right.html"},
+          "footer": {"template": "footer.html","cache":true,"varyParams":false}
+        },
+        "modules":{          
+          
+        }
+      }
+    },
+    "home": {
+      "layout": {
+        "template": "default.html",
+        "copyFrom":"default",
+        "sections": {
+          "body": {"template": "body.html","cache":true,"varyParams":false}
+        }
+      }
+    },
+    "preview": {
+      "layout": {        
+        "template": "preview.html",
+        "copyFrom":"default"
+      }
+    }
+  }
+}
